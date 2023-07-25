@@ -13,22 +13,18 @@ const items = [
     "Adding to the DOM",
     "Querying the DOM",
     "Changing the DOM",
-    "Event Listeners",
-]
-
-// const ul = document.querySelector('ul')
-
-// // let str = ''
-// // items.forEach(item => ul.innerHTML += `<li>${item}</li>`)
-document.querySelector('ul').innerHTML = items.map(item => `<li>${item}</li>`).join('')
-
-
-const h1 = document.querySelector('h1')
-
-// h1.addEventListener('click', event => event.target.innerText += '!')
-
-const ul = document.querySelector('ul')
-const text = document.querySelector('input')
-const btn = document.querySelector('button')
-
-btn.addEventListener('click', event => ul.innerHTML += `<li>${text.value}</li>`)
+    "Event Listeners"
+  ]
+  
+  document.querySelector('ul').innerHTML = items.map(item => `<li>${item}</li>`).join('')
+  
+  
+  const h1 = document.querySelector('h1')
+  
+  // h1.addEventListener('click', event => event.target.innerText += '!')
+  
+  const ul = document.querySelector('ul')
+  const text = document.querySelector('input')
+  const btn = document.querySelector('button')
+  
+  btn.addEventListener('click', event => ul.innerHTML += `<li>${text.value}</li>`)
